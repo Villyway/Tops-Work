@@ -49,18 +49,14 @@ else:
 p = float(input("Enter principal: "))
 r = float(input("Enter rate: "))
 n = float(input("Enter time: "))
-
 si = (p * r * n) / 100
-
 print("Simple Interest:", si)
-
 
 # Task 3 : Convert Celsius to Fahrenheit.
 
 c = float(input("Enter temperature in Celsius: "))
 f = (c * 9/5) + 32
 print("Fahrenheit:", f)
-
 
 # Task 4 : Accept radius and find area of circle.
 
@@ -104,28 +100,23 @@ match marks // 10:
     case _:
         print("Fail")
 
-
 # Task 2 : Check leap year.
 
 year = int(input("Enter year: "))
-
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("Leap Year")
 else:
     print("Not Leap Year")
 
-
 # Task 3 : Check number divisible by 5 and 7.
 
 num = int(input("Enter number: "))
-
 if num % 5 == 0 and num % 7 == 0:
     print("Divisible by both 5 and 7")
 else:
     print("Not divisible")
 
 #______________________________________________________
-
 
 # 28th March
 # Task : Convert for loop into while loop.
@@ -137,47 +128,36 @@ while i <= 5:
 
 #______________________________________________________
 
-
 # 31st March
 # Task 1 : Check prime number using for loop.
 
 num = int(input("Enter number: "))
-
-is_prime = True
-
 for i in range(2, num):
     if num % i == 0:
-        is_prime = False
+        print("Not Prime")
         break
-
-if is_prime and num > 1:
-    print("Prime")
 else:
-    print("Not Prime")
-
+    if num > 1:
+        print("Prime")
+    else:
+        print("Not Prime")
 
 # Task 2 : Find sum of first 100 even numbers.
 
 sum = 0
-
 for i in range(2, 201, 2):
     sum += i
-
 print("Sum:", sum)
-
 
 # Task 3 : Find sum of numbers divisible by 5 and 7 between 1000–2000.
 
 sum = 0
-
 for i in range(1000, 2001):
     if i % 5 == 0 and i % 7 == 0:
         sum += i
-
 print("Sum:", sum)
 
 #______________________________________________________
-
 
 # 1st April
 # Task 1 : Find sum of digits.
