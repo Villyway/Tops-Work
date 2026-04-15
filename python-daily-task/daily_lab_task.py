@@ -11,7 +11,6 @@ print("Subtraction:", a - b)
 print("Multiplication:", a * b)
 print("Division:", a / b)
 
-
 #______________________________________________________
 
 # 23rd March
@@ -164,21 +163,17 @@ print("Sum:", sum)
 
 num = int(input("Enter number: "))
 sum = 0
-
 while num > 0:
     rem = num % 10
     sum += rem
     num //= 10
-
 print("Sum of digits:", sum)
 
-
 # Task 2 : Count even and odd digits.
-# num = int(input("Enter number: "))
 
+num = int(input("Enter number: "))
 even = 0
 odd = 0
-
 while num > 0:
     rem = num % 10
     if rem % 2 == 0:
@@ -186,18 +181,16 @@ while num > 0:
     else:
         odd += 1
     num //= 10
-
+  
 print("Even digits:", even)
 print("Odd digits:", odd)
 
 #______________________________________________________
 
-
 # 2nd April
 # Task : Pattern program
 
 n = int(input("Enter number: "))
-
 for i in range(1, n+1):
     for j in range(i):
         print("*", end=" ")
@@ -205,40 +198,33 @@ for i in range(1, n+1):
 
 #______________________________________________________
 
-
 # 3rd April
 # Task : Find length of each word in string
 
 text = input("Enter sentence: ")
 words = text.split()
-
 for w in words:
     print(w, len(w))
 
 #______________________________________________________
 
-
 # 4th April
 # Task : String method checks
 
 s = input("Enter string: ")
-
 print(s.isdigit())
 print(s.isalpha())
 print(s.isalnum())
 
 #______________________________________________________
 
-
 # 6th April
 # Task : Negative slicing
 
 name = input("Enter name: ")
-
 print(name[::-1])
 
 #______________________________________________________
-
 
 # 8th April
 
@@ -248,16 +234,14 @@ lst_city = ['ahmedabad','surat','rajkot','surat','dahod','daman','dahod']
 for i in range(len(lst_city)):
     if lst_city[i] in lst_city[:i]:
         continue
-    
     count = 0
     for j in lst_city:
-        
         if lst_city[i] == j:
             count += 1
     print(lst_city[i], count)
     
-    
 # Task 2. count no of vowels in each city
+
 vowels = ['a','A','E','e','i','I','o','O','U','u']
 count=0
 lst_city = ['ahmedabad','surat','rajkot']
@@ -270,6 +254,7 @@ for i in lst_city:
 
 # Task 3. menu-driven shopping list
 shopping_list = []
+
 while True:
     print("\nShopping List Menu")
     print("1. Add Item\n2. Update Item\n3. Delete Item\n4. Search Item\n5. View List\n6. Exit")
@@ -332,7 +317,6 @@ for i in range(len(name)):
     print()
 #______________________________________________________
 
-
 # 11th April
 # Task : Student total marks
 
@@ -340,14 +324,12 @@ students = {
     "Ramesh": [100, 100, 100],
     "Riya": [80, 70, 80]
 }
-
 for k, v in students.items():
     print(k, sum(v))
 
 #______________________________________________________
 # 13th April
 # Task : Menu Driven program for employees using dictionary
-
 
 emp_data={
     101:{"name":"rahul","email":"rahul@gmail.com","salary":"21000","city":"ahmedabad"},
@@ -418,9 +400,7 @@ while True:
         case 8:
             break
 
-
 #______________________________________________________
-
 
 # 14th April
 # Task 1 : Create Function to check given number is positive or negative
@@ -489,7 +469,6 @@ car_data = {
     }
 }
 
-
 while True:
     print("\n====== CAR MENU ======")
     print("1. See EV Cars")
@@ -556,7 +535,6 @@ def mergeList(list_a,list_b):
     
 list_a=[1,2,3]
 list_b=[4,5,6]
-
 result=(mergeList(list_a,list_b))
 print(result)
 
@@ -575,3 +553,6 @@ dict_b = {"city": "rajkot"}
 
 ans = mergeDict(dict_a, dict_b)
 print(ans)
+
+#______________________________________________________
+
