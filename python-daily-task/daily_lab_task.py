@@ -559,9 +559,8 @@ while True:
 
 #______________________________________________________
 
-
 # 15th April
-# Task : Square function
+# Task 1 : Square function
 
 def square(n):
     return n * n
@@ -569,4 +568,30 @@ def square(n):
 num = int(input("Enter number: "))
 ans = square(num)
 print("Square:", ans)
-#______________________________________________________
+
+# Task  2 : Write python function to Merge Two List
+
+def mergeList(listA,listB):
+    return listA + listB
+    
+listA=[1,2,3]
+listB=[4,5,6]
+
+result=(mergeList(listA,listB))
+print(result)
+
+# Task  3 : Write python function to Merge Two dictionary
+
+def mergeDict(dictA, dictB):
+    result = {}
+    for key in dictA:
+        result[key] = dictA[key]
+    for key in dictB:
+        result[key] = dictB[key]
+    return result
+
+dictA = {"name": "aman", "age": 21}
+dictB = {"city": "rajkot"}
+
+ans = mergeDict(dictA, dictB)
+print(ans)
