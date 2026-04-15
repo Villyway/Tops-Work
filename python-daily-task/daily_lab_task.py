@@ -571,27 +571,27 @@ print("Square:", ans)
 
 # Task  2 : Write python function to Merge Two List
 
-def mergeList(listA,listB):
-    return listA + listB
+def mergeList(list_a,list_b):
+    return list_a + list_b
     
-listA=[1,2,3]
-listB=[4,5,6]
+list_a=[1,2,3]
+list_b=[4,5,6]
 
-result=(mergeList(listA,listB))
+result=(mergeList(list_a,list_b))
 print(result)
 
 # Task  3 : Write python function to Merge Two dictionary
 
-def mergeDict(dictA, dictB):
+def mergeDict(dict_a, dict_b):
     result = {}
-    for key in dictA:
-        result[key] = dictA[key]
-    for key in dictB:
-        result[key] = dictB[key]
+    for key in dict_a:
+        result[key] = dict_a[key]
+    for key in dict_b:
+        result[key] = dict_b[key]
     return result
 
-dictA = {"name": "aman", "age": 21}
-dictB = {"city": "rajkot"}
+dict_a = {"name": "aman", "age": 21}
+dict_b = {"city": "rajkot"}
 
-ans = mergeDict(dictA, dictB)
+ans = mergeDict(dict_a, dict_b)
 print(ans)
