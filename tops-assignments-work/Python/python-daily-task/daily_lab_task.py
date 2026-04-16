@@ -11,7 +11,6 @@ print("Subtraction:", a - b)
 print("Multiplication:", a * b)
 print("Division:", a / b)
 
-
 #______________________________________________________
 
 # 23rd March
@@ -35,7 +34,6 @@ print("Floor value : ", floor_div)
 mod = num1 % num2
 print("Modulus value : ", mod)
 
-
 # Task 1 : Accept a number and check if it is divisible by 5.
 
 num = int(input("Enter number: "))
@@ -53,7 +51,6 @@ n = float(input("Enter time: "))
 si = (p * r * n) / 100
 
 print("Simple Interest:", si)
-
 
 # Task 3 : Convert Celsius to Fahrenheit.
 
@@ -114,11 +111,9 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
 else:
     print("Not Leap Year")
 
-
 # Task 3 : Check number divisible by 5 and 7.
 
 num = int(input("Enter number: "))
-
 if num % 5 == 0 and num % 7 == 0:
     print("Divisible by both 5 and 7")
 else:
@@ -597,4 +592,25 @@ dict_b = {"city": "rajkot"}
 ans = mergeDict(dict_a, dict_b)
 print(ans)
 
+#______________________________________________________
+
+# 16th April
+# Task  1 : convert list of ferienhit into celsius (map)
+
+def fahrenheit_to_celsius(c):
+    return (c * 9/5) + 32
+c = float(input("Enter temperature in Celsius: "))
+result = list(map(fahrenheit_to_celsius, [c]))
+print("Fahrenheit:", result[0])
+
+# Task  2 : Power of numbers using map()
+
+def power(num,power):
+    return num**power
+
+lst_number=[1,2,3,4]
+lst_power=[2,2,2,2]
+
+res=list(map(power,lst_number,lst_power))
+print(res)
 #______________________________________________________
