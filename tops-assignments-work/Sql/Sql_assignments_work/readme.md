@@ -41,3 +41,11 @@ This project contains the SQL assignment for the MarketCo contact management dat
 - FOREIGN KEY
 - LIKE Operator
 - Normalization
+
+# How to View the Assignment
+
+1. Download the `SQL Assignment.docx` file from this repository.
+2. Open the file using Microsoft Word or Google Docs.
+3. Review the SQL queries
+
+---
